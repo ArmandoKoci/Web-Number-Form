@@ -1,0 +1,8 @@
+document.querySelector('.submit-button').addEventListener('click', function() {
+    const value = parseInt(document.getElementById('numberInput').value, 10);
+    if (isNaN(value) || value < 10) {
+        alert('Please enter a valid number 10 or greater before submitting.');
+    } else {
+        alert(`Submitted number: ${value}`);
+    }
+});
